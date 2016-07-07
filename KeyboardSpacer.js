@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class KeyboardSpacer extends Component {
+class KeyboardSpacer extends Component {
   static propTypes = {
     topSpacing: PropTypes.number,
     onToggle: PropTypes.func,
@@ -97,3 +97,5 @@ export default class KeyboardSpacer extends Component {
       <View style={[styles.container, { height: this.state.keyboardSpace }, this.props.style]} />);
   }
 }
+
+module.exports = KeyboardSpacer;
